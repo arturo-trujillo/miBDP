@@ -1,4 +1,4 @@
-[![Netlify Status](https://mibdp.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38dd8fbf-f2de-4696-b9d0-bba3e6eb0a06/deploy-status)](https://mibdp.netlify.app/)
 
 # MiBDP
 
