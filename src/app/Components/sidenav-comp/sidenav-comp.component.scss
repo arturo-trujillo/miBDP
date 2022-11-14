@@ -1,0 +1,34 @@
+.example-container {
+    width: 100%;
+    height: 100%;
+    background: none;
+    z-index: 100;
+    position: fixed;
+
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+
+  .closedSideNav{
+    height: 100%;
+    width: 60px;
+    background-color: #00022B;
+    position:fixed;
+    z-index: 1000;
+}
+
+.cSideNavContent{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+
+table {
+    height: 100%;
+    th{
+        padding-bottom: 20px;
+    }
+}

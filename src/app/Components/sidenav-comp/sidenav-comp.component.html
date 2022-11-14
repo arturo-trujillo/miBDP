@@ -1,0 +1,35 @@
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </mat-drawer>
+
+    <div class="closedSideNav">
+        <div class="cSideNavContent">
+            <table>
+                <tr>
+                    <th>
+                        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <mat-icon (click)="drawer.toggle()">home</mat-icon>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <mat-icon (click)="drawer.toggle()">dynamic_feed</mat-icon>
+                    </th>
+                </tr>
+                
+            </table>
+        </div>
+        </div>
+       
+    
+  
+  </mat-drawer-container>
+  
