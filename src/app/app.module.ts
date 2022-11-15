@@ -11,6 +11,13 @@ import { RightsidenavCompComponent } from './components/rightsidenav-comp/rights
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { RecomendationsAreaComponent } from './components/recomendations-area/recomendations-area.component';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 
 
@@ -20,7 +27,8 @@ import {MatIconModule} from '@angular/material/icon';
     AppComponent,
     HomePageComponent,
     SidenavCompComponent,
-    RightsidenavCompComponent
+    RightsidenavCompComponent,
+    RecomendationsAreaComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,11 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    FormsModule,
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

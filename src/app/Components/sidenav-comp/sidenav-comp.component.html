@@ -1,14 +1,31 @@
 
 <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
+    <mat-drawer #drawer class="example-sidenav" mode="over"> 
+       <table class="expanded-buttons">
+        <tr>
+            <th>
+                <button mat-button>
+                    miBDP
+                </button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button mat-button > Inicio </button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button mat-button > Categorias </button>
+            </th>
+        </tr>
+       </table>
+
     </mat-drawer>
 
     <div class="closedSideNav">
         <div class="cSideNavContent">
-            <table>
+            <table class="icon-buttons">
                 <tr>
                     <th>
                         <mat-icon (click)="drawer.toggle()">menu</mat-icon>
@@ -28,8 +45,8 @@
             </table>
         </div>
         </div>
-       
     
+        <app-recomendations-area></app-recomendations-area>
   
   </mat-drawer-container>
   
