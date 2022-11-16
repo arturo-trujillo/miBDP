@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import { MainMovieAreaComponent } from './Components/main-movie-area/main-movie-area.component';
 
 
 
@@ -28,7 +29,8 @@ import {MatCardModule} from '@angular/material/card';
     HomePageComponent,
     SidenavCompComponent,
     RightsidenavCompComponent,
-    RecomendationsAreaComponent
+    RecomendationsAreaComponent,
+    MainMovieAreaComponent
   ],
   imports: [
     BrowserModule,
