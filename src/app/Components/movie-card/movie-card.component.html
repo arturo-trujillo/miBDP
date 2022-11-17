@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>{{item.Title}}</mat-card-title>
+      <mat-card-subtitle>
+        <div class="stars" >
+            <form action="" [innerHTML] = 'htmlstring2 | sanitizeHtml'>
+            </form>
+        </div>
+     </mat-card-subtitle>
+      <img mat-card-md-image src="{{item.Poster}}" >
+    </mat-card-title-group>
+  </mat-card>

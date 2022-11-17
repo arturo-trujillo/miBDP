@@ -11,4 +11,67 @@ body{
     background-color: #000111;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Plus Jakarta Sans",  Plus Jakarta Sans; }
+
+
+
+
+div.stars {
+  width: 45%;
+  display: inline-block;
+  //background-color: #FD4;
+}
+input.star { display: none; }
+label.star {
+  float: right;
+  padding: 2px;
+  font-size: 15px;
+  color: #444;
+  transition: all .2s;
+}
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+input.star-1:checked ~ label.star:before { color: #F62; }
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+
+}
+
+
+div.star-mini {
+  width: 270px;
+  display: inline-block;
+}
+input.star-mini { display: none; }
+label.star-mini {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+input.star-mini:checked ~ label.star-mini:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+input.star-mini-5:checked ~ label.star-mini:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+input.star-mini-1:checked ~ label.star-mini:before { color: #F62; }
+label.star-mini:hover { transform: rotate(-15deg) scale(1.3); }
+label.star-mini:before {
+  content: '\f006';
+  font-family: FontAwesome;
+
+}

@@ -6,10 +6,50 @@
 
 
   <div class="background-image">
-    <div class="title-description">
+    <div class="obscure-image">
+        <div class="title-description">
 
+          <div class="title">
+            <h1>{{bestMovie.Title}}</h1>
+          </div>
+  
+          <div class="rating">
+            <table class="rating-table">
+              <tr>
+                <th>
+                  <h2> Rating:</h2>
+                </th>
+                <th >
+                  
+                  <div class="stars-mini" >
+                    <form action="" [innerHTML] = 'htmlstring | sanitizeHtml'>
+                    </form>
+                  </div>
+                </th>
+
+              </tr>
+            </table>
+          </div>
+          <div class="description">
+            <h2>
+              Sinopsis
+            </h2>
+  
+            <h4>
+              {{bestMovie.Description}}
+            </h4>
+          </div>
+        </div>
     </div>
-    <img class="back-img-src" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A4B58B11C7019B5403E07D551249121C4F4CC99119907F4460F0725B34A27086/scale?width=1200&aspectRatio=1.78&format=jpeg">
+    <img class="back-img-src" src="{{bestMovie.Background}}">
 
-</div>
+  </div>
+  <div class="movie-poster">
+    <img class="poster-image" src="{{bestMovie.Poster}}">
+
+  </div>
+
+  <div class="go-button">
+    <button mat-raised-button class="go-button-item"> Ir</button>
+  </div>
 </div>

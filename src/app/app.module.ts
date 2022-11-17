@@ -17,9 +17,16 @@ import { FormsModule } from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { MainMovieAreaComponent } from './Components/main-movie-area/main-movie-area.component';
-
-
-
+import { MoviePageComponent } from './Pages/movie-page/movie-page.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { SanitizeHtmlPipe } from './Services/sanitizing';
+import { MovieCardComponent } from './Components/movie-card/movie-card.component';
 
 
 
@@ -30,7 +37,10 @@ import { MainMovieAreaComponent } from './Components/main-movie-area/main-movie-
     SidenavCompComponent,
     RightsidenavCompComponent,
     RecomendationsAreaComponent,
-    MainMovieAreaComponent
+    MainMovieAreaComponent,
+    MoviePageComponent,
+    SanitizeHtmlPipe,
+    MovieCardComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +53,13 @@ import { MainMovieAreaComponent } from './Components/main-movie-area/main-movie-
     MatInputModule,
     FormsModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

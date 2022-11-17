@@ -37,32 +37,43 @@
 
  }
 
- .example-card {
-   background-color: #00011c;
-   width: 100%;
-   max-width: 100%;
 
-   img{
-      border-radius: 2px;
-      max-width: 100px;
-      max-height: 112px;
-      width: auto;
-      height: auto;
-      display: block;
-   }
- }
 
- .area-receintes{
+ .area-recientes{
+   margin-top: 3.5%;
+   padding-top: 20%;
    height: 100%;
    width: 100%;
+   overflow: scroll;
+
+   
  
  }
 
  .recientes{
-   margin-top: 120px;
-
+  
    mat-list-item{
       padding-bottom: 150px;
    }
  }
 
+/* width */
+::-webkit-scrollbar {
+   width: 5px;
+   
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #655100;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #201F1F;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #555;
+ }

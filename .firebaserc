@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pic-fimesem9": {
+      "hosting": {
+        "miBDP": [
+          "pic-fimesem9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pic-fimesem9"
+  }
+}

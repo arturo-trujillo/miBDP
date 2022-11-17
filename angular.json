@@ -105,6 +105,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "miBDP:build:production",
+            "firebaseProject": "pic-fimesem9",
+            "firebaseHostingSite": "pic-fimesem9"
+          }
         }
       }
     }

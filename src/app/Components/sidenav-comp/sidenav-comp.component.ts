@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-sidenav-comp',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavCompComponent implements OnInit {
 
+  @Input() bestMovie: any;
   constructor() { }
 
   ngOnInit(): void {

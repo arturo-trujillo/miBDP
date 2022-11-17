@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/Services/movies.service';
 
 @Component({
   selector: 'app-rightsidenav-comp',
@@ -8,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class RightsidenavCompComponent implements OnInit {
   value = '';
 
-  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
-  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
-  originally bred for hunting.`;
-  constructor() { }
+  movies: any;
+  recentMovies:any;
+
+
+  constructor( private movieServ: MoviesService) {
+   
+    this.movieServ.movies.subscribe(elem =>{
+      this.movies = elem
+      this.recentMovies = this.movies.slice(-5);
+    })
+   }
  
   ngOnInit(): void {
   }

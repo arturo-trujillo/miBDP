@@ -11,7 +11,7 @@
         </tr>
         <tr>
             <th>
-                <button mat-button > Inicio </button>
+                <button mat-button onclick="location.href='/home'" > Inicio </button>
             </th>
         </tr>
         <tr>
@@ -33,7 +33,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <mat-icon (click)="drawer.toggle()">home</mat-icon>
+                        <mat-icon onclick="location.href='/home'">home</mat-icon>
                     </th>
                 </tr>
                 <tr>
@@ -45,7 +45,7 @@
             </table>
         </div>
         </div>
-        <app-recomendations-area></app-recomendations-area>
+        <app-recomendations-area ></app-recomendations-area>
         <app-main-movie-area></app-main-movie-area>
   
   </mat-drawer-container>
