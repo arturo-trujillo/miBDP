@@ -2,7 +2,7 @@
     margin-left:60px;
     //margin-right:20%;
     height: 260px;
-    width : 79%;
+    width : 80%;
     background-color: #00011c;
     position:absolute;
     bottom: 0;
@@ -58,6 +58,9 @@ div.scrollmenu {
         position: relative;
         padding: 0 2px;
         transition: $duration all;
+        max-width: 350px;
+        max-height: 150px;
+        border-radius: 5px;
         
         &:hover { 
           margin: 0 40px;
@@ -79,6 +82,10 @@ div.scrollmenu {
           color: #fff;
         }
         
+      }
+
+      .item-img{
+        border-radius: 5px;
       }
   
       .arrow__btn {
