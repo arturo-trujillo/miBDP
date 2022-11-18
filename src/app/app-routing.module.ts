@@ -4,7 +4,7 @@ import { MoviePageComponent } from './Pages/movie-page/movie-page.component';
 import { HomePageComponent } from './Pages/home-page/home-page.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomePageComponent},
+  {path: '', component: HomePageComponent},
   {path: 'movie', component: MoviePageComponent}];
 
 @NgModule({

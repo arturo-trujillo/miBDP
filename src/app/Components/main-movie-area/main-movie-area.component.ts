@@ -14,7 +14,7 @@ export class MainMovieAreaComponent implements OnInit {
   
   constructor(private movieServ :MoviesService) {
     this.movieServ.movies.subscribe(elem =>{
-      this.bestMovie = elem[0];
+      this.bestMovie = elem[ Math.floor(Math.random() * elem.length)];
 
       let n = this.bestMovie.Rating;
 
@@ -102,6 +102,9 @@ export class MainMovieAreaComponent implements OnInit {
 
    
   }
-
+  gotoMovie(){
+    let link = '/movie?id=';  
+    window.location.href = link.concat(this.bestMovie.idMovie);
+  }
 }
 

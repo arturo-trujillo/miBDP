@@ -15,7 +15,8 @@
     align-items: center;
     overflow: hidden;
     border-radius: 5px;
-
+   
+  
 
 }
 
@@ -26,6 +27,8 @@
     min-height: 100%;
     border-radius: 5px;
     z-index: 10;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .obscure-image{

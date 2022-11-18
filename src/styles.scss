@@ -17,9 +17,8 @@ body { margin: 0; font-family: Roboto, "Plus Jakarta Sans",  Plus Jakarta Sans; 
 
 
 div.stars {
-  width: 45%;
+  width: auto;
   display: inline-block;
-  //background-color: #FD4;
 }
 input.star { display: none; }
 label.star {

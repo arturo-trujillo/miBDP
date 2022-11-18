@@ -20,7 +20,6 @@ export class HomePageComponent implements OnInit {
     this.moviesServ.movies.subscribe(elem =>{
       this.movies = elem;
       this.bestMovie = this.movies[0];
-      console.log(this.bestMovie);
     });
   }
 

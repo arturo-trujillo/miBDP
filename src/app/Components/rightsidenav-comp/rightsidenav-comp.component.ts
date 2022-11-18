@@ -17,7 +17,7 @@ export class RightsidenavCompComponent implements OnInit {
    
     this.movieServ.movies.subscribe(elem =>{
       this.movies = elem
-      this.recentMovies = this.movies.slice(-5);
+      this.recentMovies = this.movies.slice(-7);
     })
    }
  

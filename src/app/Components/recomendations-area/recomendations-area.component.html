@@ -3,72 +3,31 @@
     <div class="wrapper">
 
         <section id="section1">
-          <a href="#section3" class="arrow__btn left-arrow">‹</a>
-          <div class="item">
+          <a href="#section3" class="arrow__btn left-arrow" >‹</a>
+          <div class="item" *ngFor=" let item of recSec1">
             <a href="#">
+              <div class="centered">
+                  {{item.Title}}
+              </div>
+
               <img class="item-img"
-                src="https://i.pinimg.com/564x/87/d3/21/87d321f315d4b262aaf8a0a01b894920.jpg"
+                src="{{item.Background}}"
                 alt="Describe Image">
             </a>
           </div>
-          <div class="item">
-      
-            <a href="#">
-            <img class="item-img"
-              src="https://m.media-amazon.com/images/I/71Y5pMAw8rL._AC_UF894,1000_QL80_.jpg"
-              alt="Describe Image">
-            </a>
-          </div>
-          <div class="item">
-            
-            <a href="#">
-            <img class="item-img"
-              src="https://i.pinimg.com/550x/0e/4c/e0/0e4ce03e5efed43efe2986faa47dd8f8.jpg"
-              alt="Describe Image">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-            <img class="item-img"
-              src="https://www.indiewire.com/wp-content/uploads/2017/09/first-they-killed-my-father.jpg?w=674"
-              alt="Describe Image">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-            <img class="item-img"
-              src="https://static.dezeen.com/uploads/2017/09/stranger-things-season-two-netflix-poster-design-graphics.jpg"
-              alt="Describe Image">
-              </a>
-          </div>
+          
           <a href="#section2" class="arrow__btn right-arrow">›</a>
         </section>
       
         <section id="section2">
           <a href="#section1" class="arrow__btn left-arrow">‹</a>
-          <div class="item">
-            <img class="item-img"
-              src="https://m.media-amazon.com/images/I/91l6xNzLTbL._AC_UF894,1000_QL80_.jpg"
-              alt="Describe Image">
+          <div class="item" *ngFor=" let item of recSec2">
+            <div class="centered">
+              {{item.Title}}
           </div>
-          <div class="item">
+
             <img class="item-img"
-              src="https://www.indiewire.com/wp-content/uploads/2017/09/imperial-dreams-2014.jpg?w=426"
-              alt="Describe Image">
-          </div>
-          <div class="item">
-            <img class="item-img"
-              src="https://i.pinimg.com/originals/93/d3/30/93d330382e963458edb433ed100910d8.jpg"
-              alt="Describe Image">
-          </div>
-          <div class="item">
-            <img class="item-img"
-              src="https://static.dezeen.com/uploads/2017/09/stranger-things-season-two-netflix-poster-design-graphics.jpg"
-              alt="Describe Image">
-          </div>
-          <div class="item">
-            <img class="item-img"
-              src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2022/06/FUhDVfpXsAUMdMd.jpg"
+              src="{{item.Background}}"
               alt="Describe Image">
           </div>
           <a href="#section3" class="arrow__btn right-arrow">›</a>
@@ -76,29 +35,13 @@
       
         <section id="section3">
           <a href="#section2" class="arrow__btn left-arrow">‹</a>
-          <div class="item">
-            <img class="item-img"
-              src="https://m.media-amazon.com/images/I/91l6xNzLTbL._AC_UF894,1000_QL80_.jpg"
-              alt="Describe Image">
+          <div class="item" *ngFor=" let item of recSec3">
+            <div class="centered">
+              {{item.Title}}
           </div>
-          <div class="item">
+
             <img class="item-img"
-              src="https://www.indiewire.com/wp-content/uploads/2017/09/imperial-dreams-2014.jpg?w=426"
-              alt="Describe Image">
-          </div>
-          <div class="item">
-            <img class="item-img"
-              src="https://i.pinimg.com/originals/93/d3/30/93d330382e963458edb433ed100910d8.jpg"
-              alt="Describe Image">
-          </div>
-          <div class="item">
-            <img class="item-img"
-              src="https://static.dezeen.com/uploads/2017/09/stranger-things-season-two-netflix-poster-design-graphics.jpg"
-              alt="Describe Image">
-          </div>
-          <div class="item">
-            <img class="item-img"
-              src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2022/06/FUhDVfpXsAUMdMd.jpg"
+              src="{{item.Background}}"
               alt="Describe Image">
           </div>
           <a href="#section1" class="arrow__btn right-arrow">›</a>
