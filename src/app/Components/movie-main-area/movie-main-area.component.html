@@ -1,0 +1,54 @@
+<div class="cover-title-area">
+    <div class="background">
+            <img  class="background-image" src="{{movie.Background}}">
+    </div>
+    <div class="title-year-stars">
+        <table class="table-1">
+            <tr>
+                <th class="movie-year">
+                    <div >
+                        {{movie.Year}}
+                    </div>
+                    
+                </th>
+            </tr>
+            <tr>
+                <th class="movie-title">
+                <div>
+                    {{movie.Title}}
+                </div>
+                </th>
+                <th class="movie-rating">
+                <div>
+                    Rating: 
+                </div>
+                </th>
+                <th class="rating-stars">
+                    <div class="stars-movie-page" >
+                      
+                        <form action="" [innerHTML] = 'htmlstring | sanitizeHtml'>
+                        </form>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        
+    </div>
+
+ 
+</div>
+
+<div class="description-graph">
+    <div class="description">
+        <div class="movie-description">
+            {{movie.Description}}
+        </div>
+        <div class="movie-duration" >
+            <mat-icon > schedule </mat-icon>
+            {{movie.Duration}}
+        </div>
+    </div>
+    <div class="graph">
+        
+    </div>
+</div>

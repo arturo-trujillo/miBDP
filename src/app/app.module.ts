@@ -27,6 +27,10 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { SanitizeHtmlPipe } from './Services/sanitizing';
 import { MovieCardComponent } from './Components/movie-card/movie-card.component';
+import { MovieSidenavComponent } from './Components/movie-sidenav/movie-sidenav.component';
+import { MovieCommentsSecctionComponent } from './Components/movie-comments-secction/movie-comments-secction.component';
+import { MovieCommentsComponent } from './Components/movie-comments/movie-comments.component';
+import { MovieMainAreaComponent } from './Components/movie-main-area/movie-main-area.component';
 
 
 
@@ -40,7 +44,11 @@ import { MovieCardComponent } from './Components/movie-card/movie-card.component
     MainMovieAreaComponent,
     MoviePageComponent,
     SanitizeHtmlPipe,
-    MovieCardComponent
+    MovieCardComponent,
+    MovieSidenavComponent,
+    MovieCommentsSecctionComponent,
+    MovieCommentsComponent,
+    MovieMainAreaComponent
   ],
   imports: [
     BrowserModule,

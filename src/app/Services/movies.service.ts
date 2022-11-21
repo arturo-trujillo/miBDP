@@ -17,4 +17,10 @@ export class MoviesService {
     this.movies = this.movieCol.valueChanges();
   }
 
+  getMovie(idMovie:any){
+    this.afs.doc('movies/' + idMovie).valueChanges().subscribe( elem =>{
+      return elem;
+    });
+  }
+
 }

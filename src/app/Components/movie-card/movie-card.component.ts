@@ -88,4 +88,9 @@ export class MovieCardComponent implements OnInit {
     }
   }
 
+
+  gotoMovie(movie:any){
+    let link = '/movie?id=';  
+    window.location.href = link.concat(movie.idMovie);
+  }
 }

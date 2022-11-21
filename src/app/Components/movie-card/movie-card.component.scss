@@ -1,6 +1,5 @@
   .example-card {
     background-color: #00011c;
-    
     mat-card-header{
 
       display: block;
@@ -16,10 +15,17 @@
          max-width: 100px;
          max-height: 112px;
          display: block;
+        
       }
     }
     
-
+    .description-minim{
+      padding-top: 5px ;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 26ch;
+    }
 
    
   }

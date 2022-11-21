@@ -5,8 +5,8 @@
         <section id="section1">
           <a href="#section3" class="arrow__btn left-arrow" >‹</a>
           <div class="item" *ngFor=" let item of recSec1">
-            <a href="#">
-              <div class="centered">
+            <a href="#"  >
+              <div class="centered" (click)="gotoMovie(item)">
                   {{item.Title}}
               </div>
 
@@ -22,7 +22,7 @@
         <section id="section2">
           <a href="#section1" class="arrow__btn left-arrow">‹</a>
           <div class="item" *ngFor=" let item of recSec2">
-            <div class="centered">
+            <div class="centered" (click)="gotoMovie(item)">
               {{item.Title}}
           </div>
 
@@ -36,7 +36,7 @@
         <section id="section3">
           <a href="#section2" class="arrow__btn left-arrow">‹</a>
           <div class="item" *ngFor=" let item of recSec3">
-            <div class="centered">
+            <div class="centered" (click)="gotoMovie(item)">
               {{item.Title}}
           </div>
 

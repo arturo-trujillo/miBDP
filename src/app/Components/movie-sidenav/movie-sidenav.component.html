@@ -1,0 +1,52 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="over"> 
+       <table class="expanded-buttons">
+        <tr>
+            <th>
+                <button mat-button>
+                    miBDP
+                </button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button mat-button onclick="location.href=' '" > Inicio </button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button mat-button > Categorias </button>
+            </th>
+        </tr>
+       </table>
+
+    </mat-drawer>
+
+    <div class="closedSideNav">
+        <div class="cSideNavContent">
+            <table class="icon-buttons">
+                <tr>
+                    <th>
+                        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <mat-icon onclick="location.href=' '">home</mat-icon>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <mat-icon (click)="drawer.toggle()">dynamic_feed</mat-icon>
+                    </th>
+                </tr>
+                
+            </table>
+        </div>
+        </div>
+
+
+
+
+        <app-movie-main-area></app-movie-main-area>
+  </mat-drawer-container>

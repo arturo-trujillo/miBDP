@@ -14,7 +14,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Plus Jakarta Sans",  Plus Jakarta Sans; }
 
 
-
+//stars on the homepage main movie
 
 div.stars {
   width: auto;
@@ -46,6 +46,9 @@ label.star:before {
 }
 
 
+
+// stars on the recent movies sidenav card
+
 div.star-mini {
   width: 270px;
   display: inline-block;
@@ -70,6 +73,41 @@ input.star-mini-5:checked ~ label.star-mini:before {
 input.star-mini-1:checked ~ label.star-mini:before { color: #F62; }
 label.star-mini:hover { transform: rotate(-15deg) scale(1.3); }
 label.star-mini:before {
+  content: '\f006';
+  font-family: FontAwesome;
+
+}
+
+
+// Stars on the movie page 
+
+
+div.star-movie-pages-movie-page {
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+input.star-movie-page { display: none; }
+label.star-movie-page {
+  float: right;
+  padding: 2px;
+  font-size: 30px;
+  color: #444;
+  transition: all .2s;
+}
+input.star-movie-page:checked ~ label.star-movie-page:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+input.star-movie-page-5:checked ~ label.star-movie-page:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+input.star-movie-page-1:checked ~ label.star-movie-page:before { color: #F62; }
+label.star-movie-page:hover { transform: rotate(-15deg) scale(1.3); }
+label.star-movie-page:before {
   content: '\f006';
   font-family: FontAwesome;
 

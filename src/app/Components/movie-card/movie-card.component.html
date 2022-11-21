@@ -1,5 +1,5 @@
-<mat-card class="example-card">
-  <mat-card-header>
+<mat-card class="example-card" >
+  <mat-card-header (click)="gotoMovie(item)" >
       <mat-card-title-group>
       <mat-card-title>{{item.Title}}</mat-card-title>
       <mat-card-subtitle>
@@ -12,6 +12,8 @@
       </mat-card-title-group>
   </mat-card-header>
   <mat-card-content>
-
+    <p class="description-minim">
+      {{item.Description}}
+    </p>
   </mat-card-content>
   </mat-card>

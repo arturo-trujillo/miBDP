@@ -26,4 +26,9 @@ export class RecomendationsAreaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  gotoMovie(movie:any){
+    let link = '/movie?id=';  
+    window.location.href = link.concat(movie.idMovie);
+  }
+
 }

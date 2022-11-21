@@ -1,0 +1,134 @@
+.cover-title-area{
+    position: absolute;
+    top: 0;
+    background-color: #00021E;
+    margin-left: 60px;
+    width: 80%;
+    height: 34%;
+    border-bottom: #EDBE00;
+    border-bottom-width: 1px;
+    border-style: solid;
+    
+    .background{
+        
+        width: auto;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        .background-image{
+           
+            flex-shrink: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 10;
+            filter: blur(20px);
+            -webkit-filter: blur(20px);
+            filter: brightness(20%);
+        }
+        
+    }
+
+    .title-year-stars{
+        position: absolute;
+        top: 0;
+        margin-top: 15%;
+        width: 100%;
+        height: 100px;
+        padding-left: 1%;
+        
+        .table-1{
+            width: 100%;
+            display: table;
+            vertical-align: bottom;
+            height: 100%;
+            tr{
+
+                // border: #EDBE00;
+                // border-style: dotted;
+                th{
+                    // border: #EDBE00;
+                    // border-style: dotted;
+                }
+                td{
+                    vertical-align: bottom;
+                }  
+                
+                vertical-align: bottom;
+            }
+
+            .movie-title{
+                font-size: large;
+                width: 70%;
+                div{
+                    font-weight: 400;
+                    font-size: 50px;
+                    padding-bottom: 8px;
+                }
+            }
+    
+            .movie-year{
+            position: absolute;
+            top: 0;
+            margin-top: 3%;
+            div{
+                font-size: medium;
+                font-weight: 100;
+            }
+            }
+    
+            .movie-rating{
+                padding-left: 6.5%; 
+                div{
+                    font-weight: 100;
+                    font-size: large;
+                    vertical-align: bottom;
+                }
+            }
+
+            .rating-stars{
+                padding-right: 5%;
+            }
+        }
+
+       
+
+    }
+}
+
+.description-graph{
+    margin-left: 60px;
+    position: absolute;
+    top: 0;
+    margin-top: 18.9%;
+    width: 100%;
+    height: 66% ;
+    
+
+    .description{
+
+      .movie-description{
+        width: 60%;
+        height: 100%;
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 7%;
+        margin-left: 3%;
+      }
+      .movie-duration{
+        position:absolute;
+        left: 0;
+        top : 0;
+        margin-left: 68%;
+        margin-top: 7.5%;
+        font-size: 20px;
+        font-weight: 100;
+        
+      }
+    }
+
+    .graph{
+        
+    }
+}
