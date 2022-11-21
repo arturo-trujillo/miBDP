@@ -31,7 +31,6 @@ import { MovieSidenavComponent } from './Components/movie-sidenav/movie-sidenav.
 import { MovieCommentsSecctionComponent } from './Components/movie-comments-secction/movie-comments-secction.component';
 import { MovieCommentsComponent } from './Components/movie-comments/movie-comments.component';
 import { MovieMainAreaComponent } from './Components/movie-main-area/movie-main-area.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -69,7 +68,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
