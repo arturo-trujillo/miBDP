@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Input } from '@angular/core';
+
 import { MoviesService } from 'src/app/Services/movies.service';
+
+
 
 @Component({
   selector: 'app-movie-main-area',
@@ -9,8 +12,12 @@ import { MoviesService } from 'src/app/Services/movies.service';
 export class MovieMainAreaComponent implements OnInit {
   htmlstring:any
   movie:any
-  constructor(private movieServ : MoviesService) { 
-    this.movieServ.movies.subscribe( elem => {
+
+
+
+
+  constructor(private movieServ : MoviesService, private elementRef: ElementRef) { 
+       this.movieServ.movies.subscribe( elem => {
       const params = new URLSearchParams(window. location. search)
       this.movie = elem.find((elem:any) => elem.idMovie == params.get('id'));
 
@@ -92,10 +99,12 @@ export class MovieMainAreaComponent implements OnInit {
     })
   }
 
-
   
   ngOnInit(): void {
-    
+   
+
   }
+
+
 
 }

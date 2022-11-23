@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentsService } from 'src/app/Services/comments.service';
 
 @Component({
   selector: 'app-movie-comments-secction',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieCommentsSecctionComponent implements OnInit {
   value = '';
-
+  comments:any
   movies: any;
   recentMovies:any;
 
-  constructor() { }
+  constructor(private commentsServ: CommentsService) {  this.commentsServ.comments.subscribe( elem =>{
+    this.comments = elem
+  }) }
 
   ngOnInit(): void {
   }

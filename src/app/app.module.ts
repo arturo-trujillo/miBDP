@@ -31,6 +31,8 @@ import { MovieSidenavComponent } from './Components/movie-sidenav/movie-sidenav.
 import { MovieCommentsSecctionComponent } from './Components/movie-comments-secction/movie-comments-secction.component';
 import { MovieCommentsComponent } from './Components/movie-comments/movie-comments.component';
 import { MovieMainAreaComponent } from './Components/movie-main-area/movie-main-area.component';
+import { CommentComponent } from './Components/comment/comment.component';
+import { CommentCreateModalComponent } from './Components/comment-create-modal/comment-create-modal.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { MovieMainAreaComponent } from './Components/movie-main-area/movie-main-
     MovieSidenavComponent,
     MovieCommentsSecctionComponent,
     MovieCommentsComponent,
-    MovieMainAreaComponent
+    MovieMainAreaComponent,
+    CommentComponent,
+    CommentCreateModalComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,8 @@ import { MovieMainAreaComponent } from './Components/movie-main-area/movie-main-
     provideFirestore(() => getFirestore()),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
