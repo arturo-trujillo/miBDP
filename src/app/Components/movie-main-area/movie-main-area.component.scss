@@ -130,11 +130,14 @@
     }
 
     .graph{
+        
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 50%;
-        z-index: 1000;
+        .rendered-graph{
+        height: 100%;
+        width: auto;}
     }
 }
 

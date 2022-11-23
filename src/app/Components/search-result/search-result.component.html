@@ -1,0 +1,10 @@
+<div class="modal-div">
+    <h1> Resultados</h1>
+    <div class="items-div">
+        <mat-list class="results-list">
+            <mat-list-item *ngFor="let item of data">
+                <app-movie-card [item] = 'item'></app-movie-card>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>

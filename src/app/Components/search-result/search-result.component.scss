@@ -1,0 +1,22 @@
+.results-list{
+    padding-top: 50px;
+    mat-list-item{
+        padding-bottom: 150px;
+        app-movie-card{
+            width: 700px;
+        }
+    }
+}
+
+.modal-div{
+    width: 700px;
+    height: 500px;
+}
+
+.items-div{
+    height: 100%;
+}
+
+
+
+

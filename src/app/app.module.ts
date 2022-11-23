@@ -35,6 +35,10 @@ import { CommentComponent } from './Components/comment/comment.component';
 import { CommentCreateModalComponent } from './Components/comment-create-modal/comment-create-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
+import { SearchResultComponent } from './Components/search-result/search-result.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +55,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MovieCommentsComponent,
     MovieMainAreaComponent,
     CommentComponent,
-    CommentCreateModalComponent
+    CommentCreateModalComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +77,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
     ReactiveFormsModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,8 @@
 <div class="rightSidebar">
     
     <div class="search-bar">
-        <input placeholder="  Buscar" type="text" [(ngModel)]="value">
-        <mat-icon class="search-icon">search</mat-icon>
+        <input  id='search-bar-input' placeholder="  Buscar" type="text" [(ngModel)]="value">
+        <mat-icon id='search-button' class="search-icon" (click)="search()">search</mat-icon>
     </div>  
     
     <div class="area-recientes">

@@ -22,10 +22,6 @@ export class CommentCreateModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // newComment(){
-  //   this.model = new Comment('','',);
-  // }
-  // submitted = false;
   
    onSubmit() { 
     

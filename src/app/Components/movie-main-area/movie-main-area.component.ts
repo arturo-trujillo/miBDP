@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, ElementRef, Input, ViewChild, } from '@angular/core';
 
 import { MoviesService } from 'src/app/Services/movies.service';
 
@@ -12,8 +12,6 @@ import { MoviesService } from 'src/app/Services/movies.service';
 export class MovieMainAreaComponent implements OnInit {
   htmlstring:any
   movie:any
-
-
 
 
   constructor(private movieServ : MoviesService, private elementRef: ElementRef) { 
@@ -101,10 +99,6 @@ export class MovieMainAreaComponent implements OnInit {
 
   
   ngOnInit(): void {
-   
-
   }
-
-
 
 }
