@@ -1,7 +1,26 @@
-<mat-card>
-    <mat-card-title-group>
-        <mat-card-title>
-            
-        </mat-card-title>
-    </mat-card-title-group>
-</mat-card>
+<div class="comment">
+    <div class="icon-author">
+        <table class="name-user">
+            <tr>
+                <th>
+                    <mat-icon>person</mat-icon>
+                </th>
+                <th>
+                    {{item.Author}}
+                </th>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="rating">
+        <div class="stars" >
+            <form action="" [innerHTML] = 'htmlstring3 | sanitizeHtml'>
+            </form>
+          </div>
+    </div>
+
+    <div class="description">
+        {{item.Description}}
+    </div>
+</div>

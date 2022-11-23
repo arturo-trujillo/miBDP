@@ -33,8 +33,8 @@ import { MovieCommentsComponent } from './Components/movie-comments/movie-commen
 import { MovieMainAreaComponent } from './Components/movie-main-area/movie-main-area.component';
 import { CommentComponent } from './Components/comment/comment.component';
 import { CommentCreateModalComponent } from './Components/comment-create-modal/comment-create-modal.component';
-
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +71,8 @@ import { CommentCreateModalComponent } from './Components/comment-create-modal/c
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
-
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,37 @@
+.create-comment{
+    .autor{
+        padding-right: 8px;
+    }
+    #Author{
+        background-color: #00022B;
+        color: white;
+        height: 30px;
+        width: 90%;
+    }
+
+    #Description{
+        background-color: #00022B;
+        color: white;
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .Rating{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .send-button-div{
+        position: relative;
+        
+        .send-button{
+            position: absolute;
+            right: 0;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            .send-icon{color:#EDBE00}
+        }
+    }
+
+}

@@ -7,14 +7,16 @@
     
     <div class="area-recientes">
         <mat-list class="recientes"  >
-            <mat-list-item class="recientes-item"  >
-
-                   
-                <app-comment  ></app-comment>
+            <mat-list-item  class="recientes-item" *ngFor="let item of filteredComments" > 
+                <app-comment [item]="item"></app-comment>
             </mat-list-item>
         </mat-list>
     
     </div>
   
-
+    <div class="add-comment">
+        <button mat-fab class="add-comment-button" (click)="createComment()">
+            <mat-icon>comment</mat-icon>
+        </button>
+    </div>
 </div>

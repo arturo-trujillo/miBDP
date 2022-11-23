@@ -14,4 +14,12 @@ export class CommentsService {
     this.commentsCol = afs.collection<any>('comments');
     this.comments = this.commentsCol.valueChanges();
    }
+
+
+   postComment(comment:any){
+    const id = this.afs.createId();
+    comment.id = id;
+    this.afs.doc<any>('comments/'+comment.id).set(comment);
+    console.log(comment);
+   }
 }

@@ -1,1 +1,51 @@
-<p>comment-create-modal works!</p>
+<div class="create-comment">
+    <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+        <div class="Autor">
+            <table>
+                <tr>
+                    <th>
+                        <label class="autor" for="author"> Nombre</label>
+                    </th>
+                    <th>
+                        <input type="text" id="Author" formControlName="author">
+                    </th>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="Rating">
+            <table>
+                
+                <tr>
+                    <th>
+                        Rating:
+                    </th>
+                    <th>
+                        <div class="stars-comment-creates" >
+                                <input class="star-comment-create star-comment-create-5" id="star-comment-create-5" type="radio" name="star-comment-create" value=5  name='rate'/>
+                                <label class="star-comment-create star-comment-create-5" for="star-comment-create-5"></label>
+                                <input class="star-comment-create star-comment-create-4" id="star-comment-create-4" type="radio" name="star-comment-create" value=4 name='rate'/>
+                                <label class="star-comment-create star-comment-create-4" for="star-comment-create-4"></label>
+                                <input class="star-comment-create star-comment-create-3" id="star-comment-create-3" type="radio" name="star-comment-create" value=3 name='rate'/>
+                                <label class="star-comment-create star-comment-create-3" for="star-comment-create-3"></label>
+                                <input class="star-comment-create star-comment-create-2" id="star-comment-create-2" type="radio" name="star-comment-create"  value=2 name='rate'/>
+                                <label class="star-comment-create star-comment-create-2" for="star-comment-create-2"></label>
+                                <input class="star-comment-create star-comment-create-1" id="star-comment-create-1" type="radio" name="star-comment-create" value=1 name='rate'/>
+                                <label class="star-comment-create star-comment-create-1" for="star-comment-create-1"></label>
+                          </div>
+
+                    </th>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="Comentario">
+            <label>Comentario: </label>
+            <input type="text" id='Description' formControlName="description">
+        </div>
+    
+        <div class="send-button-div">
+            <button class="send-button" type="submit"  [disabled]="!commentForm.valid" slot="end" (click)="getRating()"><mat-icon class="send-icon">send</mat-icon></button>
+        </div>
+    </form>
+</div>    
