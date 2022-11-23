@@ -1,0 +1,176 @@
+<div class="cat-main-area">
+
+    <div class="search-bar">
+        <mat-card class="search-bar-card"> <table >
+            <tr >
+                <th>
+                    <input id='search-bar-input' class="input-search" type="text" placeholder="Buscar.." [(ngModel)]="value">
+
+                </th>
+                <th>
+                    <mat-icon id='search-button' (click)="search()"> search</mat-icon>
+
+                </th>
+            </tr>
+        </table></mat-card>
+    </div>
+
+    <div class="cat-1">
+        <h1> Terror</h1>
+        <div class="wrapper">
+
+            <section id="section1_1">
+              <a href="/catalogue/#section3_1" class="arrow__btn left-arrow" >‹</a>
+              <div class="item" *ngFor=" let item of cat1_1">
+                <a href="/catalogue/#"  >
+                  <div class="centered" (click)="gotoMovie(item)">
+                      {{item.Title}}
+                  </div>
+    
+                  <img class="item-img"
+                    src="{{item.Background}}"
+                    alt="Describe Image">
+                </a>
+              </div>
+              
+              <a href="/catalogue/#section2_1" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section2_1">
+              <a href="/catalogue/#section1_1" class="arrow__btn left-arrow">‹</a>
+              <div class="item" *ngFor=" let item of cat1_2">
+                <div class="centered" (click)="gotoMovie(item)">
+                  {{item.Title}}
+              </div>
+    
+                <img class="item-img"
+                  src="{{item.Background}}"
+                  alt="Describe Image">
+              </div>
+              <a href="/catalogue/#section3_1" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section3_1">
+              <a href="/catalogue/#section2_1" class="arrow__btn left-arrow">‹</a>
+              <div class="item" *ngFor=" let item of cat1_3">
+                <div class="centered" (click)="gotoMovie(item)">
+                  {{item.Title}}
+              </div>
+    
+                <img class="item-img"
+                  src="{{item.Background}}"
+                  alt="Describe Image">
+              </div>
+              <a href="/catalogue/#section1_1" class="arrow__btn right-arrow">›</a>
+            </section>
+          </div>
+    </div>
+
+    <div class="cat-2">
+        <h1> Familiar</h1>
+
+        <div class="wrapper">
+
+            <section id="section1_2">
+              <a href="/catalogue/#section3_2" class="arrow__btn left-arrow" >‹</a>
+              <div class="item" *ngFor=" let item of cat2_1">
+                <a href="/catalogue/#"  >
+                  <div class="centered" (click)="gotoMovie(item)">
+                      {{item.Title}}
+                  </div>
+    
+                  <img class="item-img"
+                    src="{{item.Background}}"
+                    alt="Describe Image">
+                </a>
+              </div>
+              
+              <a href="/catalogue/#section2_2" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section2_2">
+              <a href="/catalogue/#section1_2" class="arrow__btn left-arrow">‹</a>
+              <div class="item" *ngFor=" let item of cat2_2">
+                <div class="centered" (click)="gotoMovie(item)">
+                  {{item.Title}}
+              </div>
+    
+                <img class="item-img"
+                  src="{{item.Background}}"
+                  alt="Describe Image">
+              </div>
+              <a href="/catalogue/#section3_2" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section3_2">
+              <a href="/catalogue/#section2_2" class="arrow__btn left-arrow">‹</a>
+              <div class="item" *ngFor=" let item of cat2_3">
+                <div class="centered" (click)="gotoMovie(item)">
+                  {{item.Title}}
+              </div>
+    
+                <img class="item-img"
+                  src="{{item.Background}}"
+                  alt="Describe Image">
+              </div>
+              <a href="/catalogue/#section1_2" class="arrow__btn right-arrow">›</a>
+            </section>
+          </div>
+
+    </div>
+    
+
+    <div class="cat-3">
+        <h1> Accion</h1>
+
+        <div class="wrapper">
+
+            <section id="section1_3">
+              <a href="/catalogue/#section3_3" class="arrow__btn left-arrow" >‹</a>
+              <div class="item" *ngFor=" let item of cat3_1">
+                <a href="/catalogue/#"  >
+                  <div class="centered" (click)="gotoMovie(item)">
+                      {{item.Title}}
+                  </div>
+    
+                  <img class="item-img"
+                    src="{{item.Background}}"
+                    alt="Describe Image">
+                </a>
+              </div>
+              
+              <a href="/catalogue/#section2_3" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section2_3">
+              <a href="/catalogue/#section1_3" class="arrow__btn left-arrow">‹</a>
+              <div class="item" *ngFor=" let item of cat3_2">
+                <div class="centered" (click)="gotoMovie(item)">
+                  {{item.Title}}
+              </div>
+    
+                <img class="item-img"
+                  src="{{item.Background}}"
+                  alt="Describe Image">
+              </div>
+              <a href="/catalogue/#section3_3" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section3_3">
+              <a href="/catalogue/#section2_3" class="arrow__btn left-arrow">‹</a>
+              <div class="item" *ngFor=" let item of cat3_3">
+                <div class="centered" (click)="gotoMovie(item)">
+                  {{item.Title}}
+              </div>
+    
+                <img class="item-img"
+                  src="{{item.Background}}"
+                  alt="Describe Image">
+              </div>
+              <a href="/catalogue/#section1_3" class="arrow__btn right-arrow">›</a>
+            </section>
+          </div>
+
+    </div>
+
+</div>

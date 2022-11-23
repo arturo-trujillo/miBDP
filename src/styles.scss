@@ -11,9 +11,12 @@ body{
     background-color: #000111;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Plus Jakarta Sans",  Plus Jakarta Sans; }
+body { margin: 0; font-family: Montserrat, serif !important; }
 
 
+div,h1,h2,h3,p{
+  font-family: Montserrat, serif; 
+}
 //stars on the homepage main movie
 
 div.stars {

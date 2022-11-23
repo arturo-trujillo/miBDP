@@ -36,6 +36,9 @@ import { CommentCreateModalComponent } from './Components/comment-create-modal/c
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SearchResultComponent } from './Components/search-result/search-result.component';
+import { CatalogComponent } from './Pages/catalog/catalog.component';
+import { CatSidenavComponent } from './Components/cat-sidenav/cat-sidenav.component';
+import { CatMainAreaComponent } from './Components/cat-main-area/cat-main-area.component';
 
 
 
@@ -56,7 +59,10 @@ import { SearchResultComponent } from './Components/search-result/search-result.
     MovieMainAreaComponent,
     CommentComponent,
     CommentCreateModalComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    CatalogComponent,
+    CatSidenavComponent,
+    CatMainAreaComponent
   ],
   imports: [
     BrowserModule,

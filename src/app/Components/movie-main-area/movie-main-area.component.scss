@@ -16,6 +16,7 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        //background-image: url('https://i.imgur.com/cDoyRSI.jpeg');
         
         .background-image{
            
@@ -61,7 +62,7 @@
 
             .movie-title{
                 font-size: large;
-                width: 70%;
+                width: 65%;
                 div{
                     font-weight: 400;
                     font-size: 50px;
@@ -80,7 +81,7 @@
             }
     
             .movie-rating{
-                padding-left: 6.5%; 
+                //padding-left: 2%; 
                 div{
                     font-weight: 100;
                     font-size: large;
