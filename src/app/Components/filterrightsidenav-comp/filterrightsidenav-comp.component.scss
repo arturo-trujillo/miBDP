@@ -1,0 +1,89 @@
+.rightSidebar{
+    background-color: #00022B;
+    position: fixed;
+    right: 0;
+    width: 18%;
+    height: 100%;
+    z-index: 1000;
+    
+ }
+
+ .search-bar{
+   
+   height: 30px;
+   width: 100%;
+   padding-left: 10px;
+   padding: 10px;
+ 
+   
+   input{
+      background-color: #00055a;
+      color: white;
+      width: 100%;
+      height: 30px;
+      border-radius: 20px;
+      // border-color: grey;
+      // border: .1px;
+      // border-style:solid;
+   }
+
+   .search-icon{
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+      margin-top: 5px;
+
+   }
+
+ }
+
+ /*.example-card {
+   background-color: #00011c;
+   width: 100%;
+   max-width: 100%;
+
+   img{
+      border-radius: 2px;
+      max-width: 100px;
+      max-height: 112px;
+      width: auto;
+      height: auto;
+      display: block;
+   }
+ }*/
+ .filtros-header{
+    margin-top: 30px;
+    margin-left: 10px;
+    h1{
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+    }
+    
+ }
+
+ .area-filtros{
+   height: 100%;
+   width: 100%;
+ 
+ }
+
+ .filtros{
+   margin-top: 30px;
+
+   mat-list-item{
+      padding-bottom: 50px;
+   }
+   mat-list-option[aria-selected="true"] {
+    background: rgba(0, 94, 117, 0.7);
+  }
+
+   
+ }
+
+ .boton-ir{
+    position: absolute;
+    right: 10px;
+    margin-top: 3px;
+}
+

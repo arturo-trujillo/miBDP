@@ -1,0 +1,45 @@
+<div class="rightSidebar">
+    
+    <div class="search-bar">
+        <input placeholder="  Buscar" type="text" [(ngModel)]="value">
+        <mat-icon class="search-icon">search</mat-icon>
+    </div>  
+    <div class="filtros-header">
+        <h1>Filtros</h1>
+    </div>
+    <div class="area-filtros">
+        <mat-selection-list class="filtros">
+            <mat-list-option class="filtro-item">
+                Acción
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Aventuras
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Ciencia Ficción
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Comedia
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Drama
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Fantasía
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Infantil
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Suspenso
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Terror
+            </mat-list-option>
+            <mat-list-option class="filtro-item">
+                Animación
+            </mat-list-option>
+        </mat-selection-list>
+        <button mat-raised-button color="accent" class="boton-ir">Ir</button>
+    </div>
+</div>
