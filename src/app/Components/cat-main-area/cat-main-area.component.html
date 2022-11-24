@@ -20,7 +20,7 @@
         <div class="wrapper">
 
             <section id="section1_1">
-              <a href="#section3_1" class="arrow__btn left-arrow" >‹</a>
+              <a href="/catalogue/#section3_1" class="arrow__btn left-arrow" >‹</a>
               <div class="item" *ngFor=" let item of cat1_1" (click)="gotoMovie(item);">
                   <div class="centered" >
                       {{item.Title}}
@@ -32,11 +32,11 @@
 
               </div>
               
-              <a href="#section2_1" class="arrow__btn right-arrow">›</a>
+              <a href="/catalogue/#section2_1" class="arrow__btn right-arrow">›</a>
             </section>
           
             <section id="section2_1">
-              <a href="#section1_1" class="arrow__btn left-arrow">‹</a>
+              <a href="/catalogue/#section1_1" class="arrow__btn left-arrow">‹</a>
               <div class="item" *ngFor=" let item of cat1_2"  (click)="gotoMovie(item)">
                 <div class="centered">
                   {{item.Title}}
@@ -46,7 +46,7 @@
                   src="{{item.Background}}"
                   alt="Describe Image">
               </div>
-              <a href="#section3_1" class="arrow__btn right-arrow">›</a>
+              <a href="/catalogue/#section3_1" class="arrow__btn right-arrow">›</a>
             </section>
           
             <section id="section3_1">
