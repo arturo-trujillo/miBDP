@@ -20,24 +20,23 @@
         <div class="wrapper">
 
             <section id="section1_1">
-              <a href="/catalogue/#section3_1" class="arrow__btn left-arrow" >‹</a>
+              <a href="#section3_1" class="arrow__btn left-arrow" >‹</a>
               <div class="item" *ngFor=" let item of cat1_1">
-                <a href="/catalogue/#"  >
-                  <div class="centered" (click)="gotoMovie(item)">
+                  <div class="centered" (click)="gotoMovie(item);">
                       {{item.Title}}
                   </div>
     
                   <img class="item-img"
                     src="{{item.Background}}"
                     alt="Describe Image">
-                </a>
+
               </div>
               
-              <a href="/catalogue/#section2_1" class="arrow__btn right-arrow">›</a>
+              <a href="#section2_1" class="arrow__btn right-arrow">›</a>
             </section>
           
             <section id="section2_1">
-              <a href="/catalogue/#section1_1" class="arrow__btn left-arrow">‹</a>
+              <a href="#section1_1" class="arrow__btn left-arrow">‹</a>
               <div class="item" *ngFor=" let item of cat1_2">
                 <div class="centered" (click)="gotoMovie(item)">
                   {{item.Title}}
@@ -47,7 +46,7 @@
                   src="{{item.Background}}"
                   alt="Describe Image">
               </div>
-              <a href="/catalogue/#section3_1" class="arrow__btn right-arrow">›</a>
+              <a href="#section3_1" class="arrow__btn right-arrow">›</a>
             </section>
           
             <section id="section3_1">
@@ -74,7 +73,7 @@
             <section id="section1_2">
               <a href="/catalogue/#section3_2" class="arrow__btn left-arrow" >‹</a>
               <div class="item" *ngFor=" let item of cat2_1">
-                <a href="/catalogue/#"  >
+            
                   <div class="centered" (click)="gotoMovie(item)">
                       {{item.Title}}
                   </div>
@@ -82,7 +81,6 @@
                   <img class="item-img"
                     src="{{item.Background}}"
                     alt="Describe Image">
-                </a>
               </div>
               
               <a href="/catalogue/#section2_2" class="arrow__btn right-arrow">›</a>
@@ -128,7 +126,7 @@
             <section id="section1_3">
               <a href="/catalogue/#section3_3" class="arrow__btn left-arrow" >‹</a>
               <div class="item" *ngFor=" let item of cat3_1">
-                <a href="/catalogue/#"  >
+
                   <div class="centered" (click)="gotoMovie(item)">
                       {{item.Title}}
                   </div>
@@ -136,7 +134,7 @@
                   <img class="item-img"
                     src="{{item.Background}}"
                     alt="Describe Image">
-                </a>
+                
               </div>
               
               <a href="/catalogue/#section2_3" class="arrow__btn right-arrow">›</a>
