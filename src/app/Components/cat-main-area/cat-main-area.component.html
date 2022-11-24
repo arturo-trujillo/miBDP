@@ -21,8 +21,8 @@
 
             <section id="section1_1">
               <a href="#section3_1" class="arrow__btn left-arrow" >‹</a>
-              <div class="item" *ngFor=" let item of cat1_1">
-                  <div class="centered" (click)="gotoMovie(item);">
+              <div class="item" *ngFor=" let item of cat1_1" (click)="gotoMovie(item);">
+                  <div class="centered" >
                       {{item.Title}}
                   </div>
     
@@ -37,8 +37,8 @@
           
             <section id="section2_1">
               <a href="#section1_1" class="arrow__btn left-arrow">‹</a>
-              <div class="item" *ngFor=" let item of cat1_2">
-                <div class="centered" (click)="gotoMovie(item)">
+              <div class="item" *ngFor=" let item of cat1_2"  (click)="gotoMovie(item)">
+                <div class="centered">
                   {{item.Title}}
               </div>
     
@@ -51,8 +51,8 @@
           
             <section id="section3_1">
               <a href="/catalogue/#section2_1" class="arrow__btn left-arrow">‹</a>
-              <div class="item" *ngFor=" let item of cat1_3">
-                <div class="centered" (click)="gotoMovie(item)">
+              <div class="item" *ngFor=" let item of cat1_3" (click)="gotoMovie(item)">
+                <div class="centered" >
                   {{item.Title}}
               </div>
     
@@ -72,9 +72,9 @@
 
             <section id="section1_2">
               <a href="/catalogue/#section3_2" class="arrow__btn left-arrow" >‹</a>
-              <div class="item" *ngFor=" let item of cat2_1">
+              <div class="item" *ngFor=" let item of cat2_1" (click)="gotoMovie(item)">
             
-                  <div class="centered" (click)="gotoMovie(item)">
+                  <div class="centered">
                       {{item.Title}}
                   </div>
     
@@ -88,8 +88,8 @@
           
             <section id="section2_2">
               <a href="/catalogue/#section1_2" class="arrow__btn left-arrow">‹</a>
-              <div class="item" *ngFor=" let item of cat2_2">
-                <div class="centered" (click)="gotoMovie(item)">
+              <div class="item" *ngFor=" let item of cat2_2" (click)="gotoMovie(item)">
+                <div class="centered">
                   {{item.Title}}
               </div>
     
@@ -102,8 +102,8 @@
           
             <section id="section3_2">
               <a href="/catalogue/#section2_2" class="arrow__btn left-arrow">‹</a>
-              <div class="item" *ngFor=" let item of cat2_3">
-                <div class="centered" (click)="gotoMovie(item)">
+              <div class="item" *ngFor=" let item of cat2_3" (click)="gotoMovie(item)">
+                <div class="centered">
                   {{item.Title}}
               </div>
     
@@ -125,9 +125,9 @@
 
             <section id="section1_3">
               <a href="/catalogue/#section3_3" class="arrow__btn left-arrow" >‹</a>
-              <div class="item" *ngFor=" let item of cat3_1">
+              <div class="item" *ngFor=" let item of cat3_1" (click)="gotoMovie(item)">
 
-                  <div class="centered" (click)="gotoMovie(item)">
+                  <div class="centered">
                       {{item.Title}}
                   </div>
     
@@ -142,8 +142,8 @@
           
             <section id="section2_3">
               <a href="/catalogue/#section1_3" class="arrow__btn left-arrow">‹</a>
-              <div class="item" *ngFor=" let item of cat3_2">
-                <div class="centered" (click)="gotoMovie(item)">
+              <div class="item" *ngFor=" let item of cat3_2" (click)="gotoMovie(item)">
+                <div class="centered">
                   {{item.Title}}
               </div>
     
@@ -156,8 +156,8 @@
           
             <section id="section3_3">
               <a href="/catalogue/#section2_3" class="arrow__btn left-arrow">‹</a>
-              <div class="item" *ngFor=" let item of cat3_3">
-                <div class="centered" (click)="gotoMovie(item)">
+              <div class="item" *ngFor=" let item of cat3_3" (click)="gotoMovie(item)">
+                <div class="centered">
                   {{item.Title}}
               </div>
     
@@ -172,3 +172,6 @@
     </div>
 
 </div>
+
+
+

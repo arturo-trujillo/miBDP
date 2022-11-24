@@ -4,16 +4,14 @@
 
         <section id="section1">
           <a href="#section3" class="arrow__btn left-arrow" >‹</a>
-          <div class="item" *ngFor=" let item of recSec1">
-            <a href="#"  >
-              <div class="centered" (click)="gotoMovie(item)">
+          <div class="item" *ngFor=" let item of recSec1" (click)="gotoMovie(item)">
+              <div class="centered" >
                   {{item.Title}}
               </div>
 
               <img class="item-img"
                 src="{{item.Background}}"
                 alt="Describe Image">
-            </a>
           </div>
           
           <a href="#section2" class="arrow__btn right-arrow">›</a>
@@ -21,8 +19,8 @@
       
         <section id="section2">
           <a href="#section1" class="arrow__btn left-arrow">‹</a>
-          <div class="item" *ngFor=" let item of recSec2">
-            <div class="centered" (click)="gotoMovie(item)">
+          <div class="item" *ngFor=" let item of recSec2" (click)="gotoMovie(item)">
+            <div class="centered">
               {{item.Title}}
           </div>
 
@@ -35,8 +33,8 @@
       
         <section id="section3">
           <a href="#section2" class="arrow__btn left-arrow">‹</a>
-          <div class="item" *ngFor=" let item of recSec3">
-            <div class="centered" (click)="gotoMovie(item)">
+          <div class="item" *ngFor=" let item of recSec3" (click)="gotoMovie(item)">
+            <div class="centered">
               {{item.Title}}
           </div>
 
