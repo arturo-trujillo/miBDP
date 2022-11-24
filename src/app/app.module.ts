@@ -39,7 +39,9 @@ import { SearchResultComponent } from './Components/search-result/search-result.
 import { CatalogComponent } from './Pages/catalog/catalog.component';
 import { CatSidenavComponent } from './Components/cat-sidenav/cat-sidenav.component';
 import { CatMainAreaComponent } from './Components/cat-main-area/cat-main-area.component';
-
+import { AboutMeComponent } from './Components/about-me/about-me.component';
+import { HelpMeComponent } from './Components/help-me/help-me.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -62,7 +64,9 @@ import { CatMainAreaComponent } from './Components/cat-main-area/cat-main-area.c
     SearchResultComponent,
     CatalogComponent,
     CatSidenavComponent,
-    CatMainAreaComponent
+    CatMainAreaComponent,
+    AboutMeComponent,
+    HelpMeComponent,
   ],
   imports: [
     BrowserModule,
@@ -84,6 +88,7 @@ import { CatMainAreaComponent } from './Components/cat-main-area/cat-main-area.c
     AngularFireModule.initializeApp(environment.firebase),
     ReactiveFormsModule,
     MatDialogModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

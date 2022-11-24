@@ -1,0 +1,20 @@
+<mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            ¿No encuentras tu pelicula?
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Actualmente contamos con una cantidad limitada de peliculas, pero poco a poco agregaremos mas peliculas.</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            ¿ No se aprecia de manera correcta?
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <p>La pagina se encuentra diseñada para funcionar correctamente solo en dispositivos tales como ordenadores y laptops.</p>
+    </mat-expansion-panel>
+  </mat-accordion>

@@ -20,6 +20,9 @@
             </th>
         </tr>
        </table>
+       <div class="about-me">
+        <button mat-raised-button  (click)="aboutMe()"> Acerca de</button>
+       </div>
 
     </mat-drawer>
 
@@ -41,8 +44,12 @@
                         <mat-icon onclick="location.href='/catalogue'">dynamic_feed</mat-icon>
                     </th>
                 </tr>
+
                 
             </table>
+            <div class="help-button">     
+                    <mat-icon (click)="help()" >help</mat-icon>
+            </div>
         </div>
         </div>
         <app-recomendations-area ></app-recomendations-area>

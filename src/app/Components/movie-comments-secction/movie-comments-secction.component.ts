@@ -4,6 +4,8 @@ import {MatDialog} from '@angular/material/dialog';
 import { CommentCreateModalComponent } from '../comment-create-modal/comment-create-modal.component';
 import { SearchResultComponent } from '../search-result/search-result.component';
 import { MoviesService } from 'src/app/Services/movies.service';
+import { pipe } from 'rxjs';
+import { take } from 'rxjs';
 @Component({
   selector: 'app-movie-comments-secction',
   templateUrl: './movie-comments-secction.component.html',
@@ -18,12 +20,10 @@ export class MovieCommentsSecctionComponent implements OnInit {
   item:any
   searchResults: string[] = [];
 
-  constructor(private commentsServ: CommentsService, private dialog:MatDialog, private movieServ: MoviesService) {  this.commentsServ.comments.subscribe( elem =>{
-    
+  constructor(private commentsServ: CommentsService, private dialog:MatDialog, private movieServ: MoviesService) {  
+    this.commentsServ.comments.subscribe( elem =>{
     this.comments = elem
     this.filterComments(new URLSearchParams(window.location.search).get('id'))
-
-    
   })
 
   this.movieServ.movies.subscribe(elem =>{
@@ -46,6 +46,7 @@ export class MovieCommentsSecctionComponent implements OnInit {
   }
 
   filterComments(idMovie:any){
+    this.filteredComments = [];
     this.comments.forEach((element:any) => {
       if(element.idMovie == idMovie){
         this.filteredComments.push(element);

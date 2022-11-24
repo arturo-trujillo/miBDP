@@ -6,7 +6,7 @@
     </div>  
     
     <div class="area-recientes">
-        <mat-list class="recientes"  >
+        <mat-list id="comments" class="recientes" >
             <mat-list-item  class="recientes-item" *ngFor="let item of filteredComments" > 
                 <app-comment [item]="item"></app-comment>
             </mat-list-item>

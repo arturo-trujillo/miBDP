@@ -51,3 +51,25 @@
 mat-icon{
   color :#EDBE00;
 }
+
+.help-button{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+
+    
+    mat-icon{
+      font-size: 30px;
+      color: #EDBE00;
+    }
+}
+
+.about-me{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+   button{
+    background-color: #EDBE00;
+    color: rgb(27, 27, 27);
+   }
+}

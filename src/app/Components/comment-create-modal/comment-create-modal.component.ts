@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CommentsService } from 'src/app/Services/comments.service';
+
 @Component({
   selector: 'app-comment-create-modal',
   templateUrl: './comment-create-modal.component.html',
@@ -9,11 +10,13 @@ import { CommentsService } from 'src/app/Services/comments.service';
 export class CommentCreateModalComponent implements OnInit {
   a:any
   commentForm = new FormGroup({
-    author :  new FormControl(''),
-    rating : new FormControl(''),
-    description : new FormControl('')
+    author :  new FormControl('', [Validators.required]),
+    rating : new FormControl('', [Validators.required]),
+    description : new FormControl('', [Validators.required])
 
   })
+
+
 
   // model = new Comment( 'Autor', 'Description', 4);
   constructor(private commentServ: CommentsService) { }
@@ -31,8 +34,10 @@ export class CommentCreateModalComponent implements OnInit {
       Rating: Number(this.getRating()),
       idMovie: this.getId()
     }
+    
 
     this.commentServ.postComment(comment);
+  
   }
 
   getRating(){  

@@ -1,4 +1,5 @@
 .create-comment{
+    height: 250px;
     .autor{
         padding-right: 8px;
     }
@@ -23,14 +24,32 @@
     }
 
     .send-button-div{
+        width: auto;
+        height: auto;
         position: relative;
         
         .send-button{
             position: absolute;
             right: 0;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            .send-icon{color:#EDBE00}
+            bottom: 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            .send-icon{
+                color:#EDBE00;       
+            }
+        }
+    }
+
+    .close-button-div{
+        width: auto;
+        height: auto;
+        position: relative;
+        .exit-button{
+            position: absolute;
+            right: 0;
+            .send-icon{
+                color:#EDBE00;       
+            }
         }
     }
 
